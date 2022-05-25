@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "heartcore:stage0"
+            }
+        }
+    },
+    "rewards": {
+        "function": "heartcore:crafted_stage0"
+    }
+}

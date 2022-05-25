@@ -1,0 +1,13 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/knowledge_book"
+  },
+"overrides": 
+[
+  { "predicate": { "custom_model_data": 7740000}, "model": "stages/stage0"},
+  { "predicate": { "custom_model_data": 7740001}, "model": "stages/stage1"},
+  { "predicate": { "custom_model_data": 7740002}, "model": "stages/stage2"},
+  { "predicate": { "custom_model_data": 7740003}, "model": "stages/stage3"}
+]
+}

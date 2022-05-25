@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "121",
+    "202",
+    "121"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:golden_apple"
+    },
+    "1": {
+      "item": "minecraft:diamond"
+    },
+    "2": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "result": {
+    "item": "minecraft:debug_stick",
+    "count": 1
+  },
+  "group": "stage0"
+}

@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:barrel"
+        }
+    ],
+    "result": {
+      "item": "minecraft:debug_stick",
+      "count": 1
+    },
+    "group": "crafter"
+  }
