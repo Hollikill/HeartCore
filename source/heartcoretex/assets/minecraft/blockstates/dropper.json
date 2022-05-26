@@ -1,0 +1,66 @@
+{
+    "multipart":[
+        {
+           "when":{
+              "triggered":true,
+              "facing":"up"
+           },
+           "apply":{
+              "model":"heartcore:block/crafter"
+           }
+        },
+        {
+            "when":{
+               "facing":"down"
+            },
+            "apply":{
+               "model":"minecraft:block/dropper_vertical",
+               "x" : 180
+            }
+         },
+         {
+            "when":{
+                "triggered":false,
+                "facing":"up"
+            },
+            "apply":{
+               "model":"minecraft:block/dropper_vertical"
+            }
+         },
+         {
+             "when":{
+                "facing":"north"
+             },
+             "apply":{
+                "model":"minecraft:block/dropper"
+             }
+          },
+          {
+             "when":{
+                "facing":"east"
+             },
+             "apply":{
+                "model":"minecraft:block/dropper",
+                "y" : 90
+             }
+          },
+          {
+              "when":{
+                 "facing":"south"
+              },
+              "apply":{
+                 "model":"minecraft:block/dropper",
+                 "y" : 180
+              }
+           },
+           {
+              "when":{
+                 "facing":"west"
+              },
+              "apply":{
+                 "model":"minecraft:block/dropper",
+                 "y" : 270
+              }
+           }
+     ]
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "heartcore:block/crafter_bottom",
+    "north": "heartcore:block/crafter_front",
+    "south": "heartcore:block/crafter_front",
+    "east": "heartcore:block/crafter_side",
+    "west": "heartcore:block/crafter_side",
+    "up": "heartcore:block/crafter_top",
+    "down": "heartcore:block/crafter_bottom"
+  }
+}
