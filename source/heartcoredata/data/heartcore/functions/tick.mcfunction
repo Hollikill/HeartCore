@@ -20,19 +20,19 @@ execute as @a[scores={restored_life=1..}] run scoreboard players set @s restored
 
 execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740000}}]},scores={hardcore_deaths=1..4}] unless score @s stage0 matches 1 run scoreboard players set @s restored_life 1
 execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740000}}]},scores={hardcore_deaths=1..4}] unless score @s stage0 matches 1 run scoreboard players remove @s hardcore_deaths 1
-execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740002}}]},scores={hardcore_deaths=1..4}] unless score @s stage0 matches 1 run scoreboard players set @s stage0 1
+execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740000}}]},scores={restored_life=1}] unless score @s stage0 matches 1 run scoreboard players set @s stage0 1
 execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740000}}]},scores={restored_life=1}] run clear @s minecraft:knowledge_book{CustomModelData:7740000}
 execute as @a[scores={restored_life=1..}] run scoreboard players set @s restored_life 0
 
 execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740001}}]},scores={hardcore_deaths=1..4}] unless score @s stage1 matches 1 run scoreboard players set @s restored_life 1
 execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740001}}]},scores={hardcore_deaths=1..4}] unless score @s stage1 matches 1 run scoreboard players remove @s hardcore_deaths 1
-execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740002}}]},scores={hardcore_deaths=1..4}] unless score @s stage1 matches 1 run scoreboard players set @s stage1 1
+execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740001}}]},scores={restored_life=1}] unless score @s stage1 matches 1 run scoreboard players set @s stage1 1
 execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740001}}]},scores={restored_life=1}] run clear @s minecraft:knowledge_book{CustomModelData:7740001}
 execute as @a[scores={restored_life=1..}] run scoreboard players set @s restored_life 0
 
 execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740002}}]},scores={hardcore_deaths=1..4}] unless score @s stage2 matches 1 unless score @s stage0 matches 1 run scoreboard players set @s restored_life 1
 execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740002}}]},scores={hardcore_deaths=1..4}] unless score @s stage2 matches 1 run scoreboard players remove @s hardcore_deaths 1
-execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740002}}]},scores={hardcore_deaths=1..4}] unless score @s stage2 matches 1 run scoreboard players set @s stage2 1
+execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740002}}]},scores={restored_life=1}] unless score @s stage2 matches 1 run scoreboard players set @s stage2 1
 execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740002}}]},scores={restored_life=1}] run clear @s minecraft:knowledge_book{CustomModelData:7740002}
 execute as @a[scores={restored_life=1..}] run scoreboard players set @s restored_life 0
 

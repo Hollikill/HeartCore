@@ -1,7 +1,7 @@
 @echo off
 set buildfolder=%CD%\temp
 mkdir %buildfolder%
-"C:\Program Files\7-zip\7z.exe" a -tzip "%buildfolder%\heartcoredata.zip" "%Userprofile%\Documents\GitHub\HeartCore\source\heartcore\*"
+"C:\Program Files\7-zip\7z.exe" a -tzip "%buildfolder%\heartcoredata.zip" "%Userprofile%\Documents\GitHub\HeartCore\source\heartcoredata\*"
 "C:\Program Files\7-zip\7z.exe" a -tzip "%buildfolder%\heartcoretex.zip" "%Userprofile%\Documents\GitHub\HeartCore\source\heartcoretex\*"
 xcopy /e /y /q "%Userprofile%\Documents\GitHub\HeartCore\source\heartcore" "%buildfolder%"
 cls
