@@ -5,6 +5,6 @@
   },
 "overrides": 
 [
-  { "predicate": { "custom_model_data": 7740000}, "model": "item/crafter"}
+  { "predicate": { "custom_model_data": 7740000}, "model": "heartcore:block/crafter"}
 ]
 }
