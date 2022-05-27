@@ -40,6 +40,7 @@ execute as @a[nbt={Inventory:[{id:"minecraft:dropper",tag:{display:{Name:'{"colo
 
 # check crafter
 execute as @e[tag=crafter1] at @s unless block ~ ~ ~ minecraft:dropper run kill @s
+execute as @e[tag=crafter1] at @s unless block ~ ~ ~ minecraft:dropper[facing=up,triggered=true] unless block ~ ~ ~ minecraft:dropper{Items:[{Count:1b}]} run setblock ~ ~ ~ minecraft:dropper[facing=up,triggered=true]
 execute as @e[tag=crafter1] run function heartcore:stage0
 execute as @e[tag=crafter1] run function heartcore:stage1
 execute as @e[tag=crafter1] run function heartcore:stage2
