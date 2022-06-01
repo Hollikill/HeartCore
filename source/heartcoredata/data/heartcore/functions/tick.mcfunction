@@ -46,6 +46,10 @@ execute as @e[tag=crafter1] run function heartcore:stage1
 execute as @e[tag=crafter1] run function heartcore:stage2
 execute as @e[tag=crafter1] run function heartcore:stage3
 execute as @e[tag=crafter1] run function heartcore:godblood
+execute as @e[tag=crafter1] run function heartcore:cunife_ingot0
+execute as @e[tag=crafter1] run function heartcore:cunife_ingot1
+execute as @e[tag=crafter1] run function heartcore:cunife_block
+execute as @e[tag=crafter1] run function heartcore:anvil
 
 # clear bonus on death & init bonus counters
 execute as @a[scores={health=0}] run scoreboard players set @s stage0 0

@@ -1,0 +1,1 @@
+execute at @s if block ~ ~ ~ minecraft:dropper{Items: [{Slot: 4b, id: "minecraft:knowledge_book", Count: 1b, tag: {CustomModelData: 7740006}}]} run execute at @s run data merge block ~ ~ ~ {Items:[{Slot:4b,id:"minecraft:knowledge_book",tag:{CustomModelData:7740005,display:{Name:'[{"text":"Cunife Ingot","italic":false}]'},Unbreakable:1,HideFlags:4},Count:9b}]}
