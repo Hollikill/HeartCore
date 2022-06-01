@@ -1,0 +1,14 @@
+execute at @a[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740000}}]}] run give @s minecraft:glistering_melon_slice{CustomModelData:7740000}
+execute at @a[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740001}}]}] run give @s minecraft:glistering_melon_slice{CustomModelData:7740001}
+execute at @a[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740002}}]}] run give @s minecraft:glistering_melon_slice{CustomModelData:7740002}
+execute at @a[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740003}}]}] run give @s minecraft:glistering_melon_slice{CustomModelData:7740003}
+execute at @a[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740004}}]}] run give @s minecraft:glistering_melon_slice{CustomModelData:7740004}
+execute at @a[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740005}}]}] run give @s minecraft:glistering_melon_slice{CustomModelData:7740005}
+execute at @a[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740006}}]}] run give @s minecraft:glistering_melon_slice{CustomModelData:7740006}
+execute at @a[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740000}}]}] run clear @s minecraft:knowledge_book{CustomModelData:7740000} 1
+execute at @a[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740001}}]}] run clear @s minecraft:knowledge_book{CustomModelData:7740001} 1
+execute at @a[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740002}}]}] run clear @s minecraft:knowledge_book{CustomModelData:7740002} 1
+execute at @a[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740003}}]}] run clear @s minecraft:knowledge_book{CustomModelData:7740003} 1
+execute at @a[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740004}}]}] run clear @s minecraft:knowledge_book{CustomModelData:7740004} 1
+execute at @a[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740005}}]}] run clear @s minecraft:knowledge_book{CustomModelData:7740005} 1
+execute at @a[nbt={Inventory:[{id:"minecraft:knowledge_book",tag:{CustomModelData:7740006}}]}] run clear @s minecraft:knowledge_book{CustomModelData:7740006} 1

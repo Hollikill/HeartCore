@@ -1,0 +1,17 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/glistering_melon_slice"
+  },
+"overrides": 
+[
+  { "predicate": { "custom_model_data": 7740000}, "model": "item/stage0"},
+  { "predicate": { "custom_model_data": 7740001}, "model": "item/stage1"},
+  { "predicate": { "custom_model_data": 7740002}, "model": "item/stage2"},
+  { "predicate": { "custom_model_data": 7740003}, "model": "item/stage3"},
+  { "predicate": { "custom_model_data": 7740004}, "model": "item/godblood"},
+  { "predicate": { "custom_model_data": 7740005}, "model": "item/cunife_ingot"},
+  { "predicate": { "custom_model_data": 7740006}, "model": "item/cunife_block"},
+  { "predicate": { "custom_model_data": 7740007}, "model": "item/duralite_ingot"}
+]
+}
