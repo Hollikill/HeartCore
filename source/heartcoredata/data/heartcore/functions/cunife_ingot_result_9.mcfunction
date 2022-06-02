@@ -1,0 +1,1 @@
+execute at @s run data modify block ~ ~ ~ Items append value {Slot:4b,id:"minecraft:glistering_melon_slice",tag:{CustomModelData:7740005,display:{Name:'[{"text":"Cunife Ingot","italic":false}]'},Unbreakable:1,HideFlags:4},Count:9b}
