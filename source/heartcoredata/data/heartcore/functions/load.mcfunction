@@ -23,3 +23,7 @@ scoreboard objectives add current_deaths deathCount
 
 # add info command
 scoreboard objectives add info trigger
+
+# ubermeat stuff
+scoreboard objectives add hold_ubermeat dummy
+scoreboard objectives add use_gold_apple minecraft.used:minecraft.golden_apple

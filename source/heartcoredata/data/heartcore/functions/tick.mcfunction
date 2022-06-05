@@ -73,3 +73,11 @@ execute as @a unless score @s stage3 matches 0..1 run scoreboard players set @s 
 execute as @a[nbt={Inventory:[{id:"minecraft:debug_stick",tag:{CustomModelData:1}}]}] run clear @s debug_stick
 execute as @e[type=item,nbt={Item:{id:"minecraft:debug_stick",tag:{CustomModelData:1}}}] run kill @s
 execute as @a[nbt={Inventory:[{id:"minecraft:knowledge_book"}]}] run function heartcore:update
+
+# give saturation if ubermeat is eaten
+execute as @a[nbt={SelectedItem:{id:"minecraft:golden_apple",tag:{CustomModelData:7740008}}}] run scoreboard players set @s hold_ubermeat 1
+execute as @a[scores={hold_ubermeat=1,use_gold_apple=1..}] run effect give @s minecraft:saturation 100 9 true
+execute as @a[scores={hold_ubermeat=1,use_gold_apple=1..}] run effect give @s minecraft:strength 120 0
+execute as @a[scores={hold_ubermeat=1,use_gold_apple=1..}] run effect clear @s minecraft:regeneration
+execute as @a[scores={use_gold_apple=1..}] run scoreboard players reset @s use_gold_apple
+execute as @a[scores={hold_ubermeat=1..}] run scoreboard players reset @s hold_ubermeat
