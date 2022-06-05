@@ -1,1 +1,0 @@
-execute at @s if block ~ ~ ~ minecraft:dropper{Items: [{Slot: 4b, id: "minecraft:glistering_melon_slice", Count: 1b, tag: {CustomModelData: 7740006}}]} run execute at @s run function heartcore:cunife_ingot_result_9

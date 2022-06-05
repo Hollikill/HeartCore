@@ -1,0 +1,4 @@
+execute at @s if block ~ ~ ~ minecraft:dropper{Items: [{Slot: 0b, id: "minecraft:cooked_mutton"}, {Slot: 1b, id: "minecraft:cooked_rabbit"}, {Slot: 2b, id: "minecraft:cooked_mutton"}, {Slot: 3b, id: "minecraft:cooked_chicken"}, {Slot: 4b, id: "minecraft:cooked_porkchop"}, {Slot: 5b, id: "minecraft:cooked_chicken"}, {Slot: 6b, id: "minecraft:cooked_beef"}, {Slot: 7b, id: "minecraft:cooked_rabbit"}, {Slot: 8b, id: "minecraft:cooked_beef"}]} run execute at @s run scoreboard players set temp dummy 1
+execute at @s if score temp dummy matches 1 run function heartcore:craftercount
+execute at @s if score temp dummy matches 1 run summon item ~ ~1 ~ {Item:{id:"minecraft:golden_apple",tag:{CustomModelData:7740008,display:{Name:'[{"text":"Ubermeat","italic":false}]'},Unbreakable:1,HideFlags:4},Count:1b}}
+scoreboard players set temp dummy 0

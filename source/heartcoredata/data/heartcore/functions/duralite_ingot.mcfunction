@@ -1,1 +1,0 @@
-execute at @s if block ~ ~ ~ minecraft:dropper{Items: [{Slot: 1b, id: "minecraft:netherite_scrap", Count: 1b}, {Slot: 4b, id: "minecraft:diamond", Count: 1b}]} run execute at @s run function heartcore:duralite_ingot_result

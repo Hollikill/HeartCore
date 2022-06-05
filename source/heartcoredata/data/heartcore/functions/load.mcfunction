@@ -4,6 +4,12 @@ scoreboard objectives add stage1 dummy
 scoreboard objectives add stage2 dummy
 scoreboard objectives add stage3 dummy
 
+# crafting shit
+scoreboard objectives add craftcount dummy
+scoreboard objectives add dummy dummy
+scoreboard players set 1 dummy 1
+scoreboard players set temp dummy 0
+
 # hp counter for marking death
 scoreboard objectives add health health
 

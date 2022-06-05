@@ -1,0 +1,6 @@
+execute at @s if block ~ ~ ~ minecraft:dropper{Items: [{Slot: 0b, id: "minecraft:copper_ingot"}, {Slot: 1b, id: "minecraft:iron_ingot"}, {Slot: 2b, id: "minecraft:copper_ingot"}, {Slot: 3b, id: "minecraft:iron_ingot"}, {Slot: 4b, id: "minecraft:gold_ingot"}, {Slot: 5b, id: "minecraft:iron_ingot"}, {Slot: 6b, id: "minecraft:copper_ingot"}, {Slot: 7b, id: "minecraft:iron_ingot"}, {Slot: 8b, id: "minecraft:copper_ingot"}]} run scoreboard players set temp dummy 1
+execute at @s if block ~ ~ ~ minecraft:dropper{Items: [{Slot: 4b, id: "minecraft:glistering_melon_slice", tag: {CustomModelData: 7740006}}]} run execute at @s run scoreboard players set temp dummy 1
+execute at @s if block ~ ~ ~ minecraft:dropper{Items: [{Slot: 4b, id: "minecraft:glistering_melon_slice", tag: {CustomModelData: 7740006}}]} run scoreboard players set crafttype dummy 2
+execute at @s if score temp dummy matches 1 run function heartcore:craftercount
+execute at @s if score temp dummy matches 1 run summon item ~ ~1 ~ {Item:{id:"minecraft:glistering_melon_slice",tag:{CustomModelData:7740005,display:{Name:'[{"text":"Cunife Ingot","italic":false}]'},Unbreakable:1,HideFlags:4},Count:9b}}
+scoreboard players set temp dummy 0

@@ -1,0 +1,5 @@
+execute at @s if block ~ ~ ~ minecraft:dropper{Items: [{Slot: 0b, id: "minecraft:glistering_melon_slice", tag: {CustomModelData: 7740006}}, {Slot: 1b, id: "minecraft:glistering_melon_slice", tag: {CustomModelData: 7740006}}, {Slot: 2b, id: "minecraft:glistering_melon_slice", tag: {CustomModelData: 7740006}}, {Slot: 4b, id: "minecraft:glistering_melon_slice", tag: {CustomModelData: 7740005}}, {Slot: 6b, id: "minecraft:glistering_melon_slice", tag: {CustomModelData: 7740005}}, {Slot: 7b, id: "minecraft:glistering_melon_slice", tag: {CustomModelData: 7740005}}, {Slot: 8b, id: "minecraft:glistering_melon_slice", tag: {CustomModelData: 7740005}}]} run scoreboard players set temp dummy 1
+execute at @s if score temp dummy matches 1 run scoreboard players set crafttype dummy 1
+execute at @s if score temp dummy matches 1 run function heartcore:craftercount
+execute at @s if score temp dummy matches 1 run summon item ~ ~1 ~ {Item:{id:"minecraft:anvil",Count:1b}}
+scoreboard players set temp dummy 0

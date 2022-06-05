@@ -1,9 +1,15 @@
-# add bonus lives
+# add bonus lives from apples
 execute as @a[scores={stage0=0,stage1=0,stage2=0,stage3=0}] run attribute @s minecraft:generic.max_health base set 20
 execute as @a[scores={stage0=1,stage1=0,stage2=0,stage3=0}] run attribute @s minecraft:generic.max_health base set 22
 execute as @a[scores={stage1=1,stage2=0,stage3=0}] run attribute @s minecraft:generic.max_health base set 24
 execute as @a[scores={stage2=1,stage3=0}] run attribute @s minecraft:generic.max_health base set 26
 execute as @a[scores={stage3=1}] run attribute @s minecraft:generic.max_health base set 30
+# add bonus effects from apples
+execute as @a[scores={stage0=1}] run effect give @s minecraft:night_vision 15 0 true
+execute as @a[scores={stage1=1}] run effect give @s minecraft:haste 15 0 true
+execute as @a[scores={stage2=1}] run effect give @s minecraft:dolphins_grace 15 0 true
+execute as @a[scores={stage2=1}] run effect give @s minecraft:speed 15 0 true
+execute as @a[scores={stage3=1}] run effect give @s minecraft:haste 15 1 true
 
 execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:glistering_melon_slice",tag:{CustomModelData:7740000}}]}] unless score @s stage0 matches 1 run scoreboard players set @s temp_true 1
 execute as @a if entity @s[nbt={Inventory:[{id:"minecraft:glistering_melon_slice",tag:{CustomModelData:7740000}}]},scores={temp_true=1}] unless score @s stage0 matches 1 run scoreboard players set @s stage0 1
@@ -42,17 +48,16 @@ execute as @a[nbt={Inventory:[{id:"minecraft:dropper",tag:{display:{Name:'{"colo
 execute as @e[tag=crafter1] at @s unless block ~ ~ ~ minecraft:dropper run kill @s
 execute as @e[tag=crafter1] at @s unless block ~ ~ ~ minecraft:dropper[facing=up,triggered=true] unless block ~ ~ ~ minecraft:dropper{Items:[{Count:1b}]} run setblock ~ ~ ~ minecraft:dropper[facing=up,triggered=true]
 
-execute as @e[tag=crafter1] run function heartcore:stage0
-execute as @e[tag=crafter1] run function heartcore:stage1
-execute as @e[tag=crafter1] run function heartcore:stage2
-execute as @e[tag=crafter1] run function heartcore:stage3
-execute as @e[tag=crafter1] run function heartcore:godblood
-execute as @e[tag=crafter1] run function heartcore:cunife_ingot0
-execute as @e[tag=crafter1] run function heartcore:cunife_ingot1
-execute as @e[tag=crafter1] run function heartcore:cunife_block
-execute as @e[tag=crafter1] run function heartcore:anvil
-execute as @e[tag=crafter1] run function heartcore:duralite_ingot
-execute as @e[tag=crafter1] run function heartcore:ubermeat
+execute as @e[tag=crafter1] run function heartcore:craft_stage0
+execute as @e[tag=crafter1] run function heartcore:craft_stage1
+execute as @e[tag=crafter1] run function heartcore:craft_stage2
+execute as @e[tag=crafter1] run function heartcore:craft_stage3
+execute as @e[tag=crafter1] run function heartcore:craft_godblood
+execute as @e[tag=crafter1] run function heartcore:craft_cunife_ingot
+execute as @e[tag=crafter1] run function heartcore:craft_cunife_block
+execute as @e[tag=crafter1] run function heartcore:craft_anvil
+execute as @e[tag=crafter1] run function heartcore:craft_duralite_ingot
+execute as @e[tag=crafter1] run function heartcore:craft_ubermeat
 
 # clear bonus on death & init bonus counters
 execute as @a[scores={health=0}] run scoreboard players set @s stage0 0
